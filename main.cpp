@@ -1,13 +1,15 @@
 #include <iostream>
 #include "ItemToPurchase.h"
 using namespace std;
+//Simulates a checkout process. The user enters 2 items, their price, and how many of those item they want to purchase.
+//The program then calculates the total price.
 
 int main(){
 	string name;
 	double price;
 	int quantity;
 	ItemToPurchase i1, i2;
-	cout << "Item 1\nEnter the item name:" << endl;
+	cout << "Item 1" << endl << "Enter the item name:" << endl;
 	getline(cin, name);
 	i1.SetName(name);
 	cout << "Enter the item price:" << endl;
@@ -18,7 +20,7 @@ int main(){
 	i1.SetQuantity(quantity);
 	cin.ignore();
 
-	cout << "\nItem 2\nEnter the item name:" << endl;
+	cout << "\nItem 2" << endl << "Enter the item name:" << endl;
 	getline(cin, name);
 	i2.SetName(name);
 	cout << "Enter the item price:" << endl;
